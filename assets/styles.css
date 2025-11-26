@@ -324,3 +324,52 @@ body.dark .footer {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
+.skills {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.skills h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.skill-chips span {
+  padding: 8px 14px;
+  font-size: 15px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.07);
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-chips span:hover {
+  background: #00eaff;
+  color: #000;
+  border-color: #00eaff;
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0,234,255,0.6);
+}
+
+/* Dark Mode support */
+body.dark .skill-chips span {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+body.dark .skill-chips span:hover {
+  background: #00eaff;
+  color: #000;
+  box-shadow: 0 0 14px rgba(0,234,255,0.8);
+}
