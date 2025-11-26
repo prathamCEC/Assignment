@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratham | Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <script defer src="assets/script.js"></script>
+</head>
+
+<body class="light">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">K Pratham Kumar</div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <button class="mode-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero fade-in" data-aos="zoom-in">
+  <img src="assets/photo.jpeg" class="profile-img">
+
+  <h1 class="title typing">Hi, I'm Pratham 👋</h1>
+  <p class="subtitle">I am <span id="typingText"></span></p>
+
+  <div class="socials">
+    <a href="https://github.com/prathamCEC" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/k-pratham-kumar-8a0a462a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <button class="btn" onclick="location.href='resume.html'">View Resume</button>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<footer class="footer">
+  <p>© 2025 Pratham | Powered by Creativity ⚡</p>
+</footer>
+
+</body>
+</html>
